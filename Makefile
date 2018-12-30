@@ -1,8 +1,8 @@
 TARGET = libequeue.a
 
-CC = gcc
-AR = ar
-SIZE = size
+CC ?= gcc
+AR ?= ar
+SIZE ?= size
 
 SRC += $(wildcard *.c)
 OBJ := $(SRC:.c=.o)
